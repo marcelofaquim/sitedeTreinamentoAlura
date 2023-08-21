@@ -1,0 +1,345 @@
+body{
+	background: linear-gradient(90deg,rgb(225, 226, 234),#87CEFA) ; /*colocando degrade*/
+	font-family: 'Montserrat', sans-serif;
+}
+
+header{   
+	
+	padding: 20px 0;
+}
+
+.caixa{
+
+	position: relative;
+
+	/*largura, geralmente esse numero é padrão da web*/
+	width: 940px; 
+
+	/* definindo que as larguras lateriais sejam centralizadas automaticas */
+	margin: 0 auto; 
+}
+
+nav{
+
+	 /*permite que o cabeçalho saia de seu ponto fixo*/
+	position: absolute;
+
+	/* esta centralizado de acordo com o tamanho da imagem ao seu lado */
+	top: 110px; 
+
+	right: 0;
+}
+
+
+nav li {   
+
+	/*mexendo no menu, para ele não ficar um embaixo do outro*/
+	display: inline;  
+
+	 /* aumento o espaçamento entre as letras explicação dos numeros (0 topo, 0 direita, 0 baixo, 15 esquerda) */
+	margin: 0 0 0 15px;
+	
+}
+
+nav a {
+
+	text-transform: uppercase; /* deixando o texto do menu em maisculo*/
+	color: #000000; /*deixando a letra com outra cor*/
+	font-weight: bold ; /* deixando o texto em negrito*/
+	font-size: 22px; /* deixando a letra maior*/
+	text-decoration: none; /* tirando a decoração do texto ex: sublinhado*/
+
+}
+
+nav a:hover { /* quando o mouse estiver por cima dos link, a tela irá ter uma reação*/
+	color: blue;
+
+	/* fazendo o sublinhado voltar, quando o mouse estiver em cima*/
+	text-decoration: underline; 
+
+}
+
+.produtos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+
+	/* permitir que as laterais fque 30%, só irei acrescentar na largura*/
+	box-sizing: border-box; 
+
+	/* colocando bordar 1 o tamanho da linha dela,  2. o tipo e a  3.cor*/
+	border: 2px double #000000 ;
+	
+	border-radius: 10px;
+
+}
+
+.produtos li:hover{
+	border-color: blue;
+	text-decoration: underline;
+}
+
+/* toda vez que o mouse clicar em cima, irá trocar a cor ou ter uma reação baseado no codigo abaixo*/
+.produtos li:active{ 
+	border-color: #c78c19;
+}
+
+/* Quero quando o mouse estiver por cima de alguma das 3 bordas, tenha um tamanho determinado abaixo*/
+.produtos li:hover h2{ 
+		font-size: 20px;
+}
+
+
+.produtos h2{
+
+	/* tamanho das letras*/
+	font-size: 18px; 
+
+	/* coloando as letras em negrito*/
+	font-weight: bold; 
+}
+
+
+.produto-descricao{
+	font-size: 18px;
+}
+
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+
+footer {
+	text-align: center;
+
+	/* colocando uma cor de fundo*/
+	background: #87CEFA; 
+	padding: 40px 0;
+
+}
+
+
+.copyright{
+	font-size: 13px;
+	margin: 20px;
+}
+
+form {
+	margin: 40px 0;
+	
+}
+
+form label, form legend {
+	display: block;
+	font-size: 15px;
+	margin: 0 0 10px;
+	
+}
+/* usando as configurações para o input e a caixa de text (usando apenas a virgula)*/
+.input-padrao { 
+	display: block;
+	margin: 0 0 20px;
+	padding: 5px 25px;
+	width: 40%;
+	
+}
+
+.checkbox {
+	margin: 5px;
+}
+
+.enviar {
+	width: 20%;
+	padding: 15px 0;
+	background: #87CEFA;
+	font: bold;
+	border: none;
+	border-radius: 5px;
+
+	/*usanso uma transição para deixar a troca de cor mais lenta*/
+	transition: 2s; 
+
+	/* mudando a seta do mouse para a mãozinha*/
+	cursor: pointer; 
+
+}
+
+.enviar:hover {
+	background: orange;
+
+	/* codigo para aumentar o tamanho do objeto, quando o cursor estver em cima*/
+	transform: scale(1.1); 
+
+	/* inclina o item em quantos graus eu quiser*/
+	transform: rotate(5deg); 
+	/* se eu quiser que as duas funções sejam usadas juntas, basta colocar uma função do lado da outra*/
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: white;
+	color: black; ;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+
+}
+
+.banner {
+	width: 100%;
+
+}
+
+.principal {
+	padding: 1.2em 0;
+	width: 940px;
+	margin: 0 auto;
+}
+
+main{
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+.titulo-principal{
+	text-align: center;
+
+	/* "EM tamanho proporcional" significa que tal objeto fica duas vezes maior que o tamanho base que é 15px */
+	font-size: 2em; 
+	margin: 0 0 0.5em;
+	clear: left;
+
+	/* estou criando sobra no texto*/
+	text-shadow: 2px 2px #FFFF ; 
+	
+}
+
+.principal p {
+	margin: 0 0 0.5em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.img4{
+	width: 120px;
+	float: left;
+	margin: 12px;
+}
+
+.img5{
+	width: 120px;
+	float: right;
+	margin: 12px;
+}
+
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa {
+
+	/* é um espaçamento interno*/
+	padding: 3em;  
+
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p{
+	margin: 2em;
+	text-align: center;
+	
+}
+
+.beneficio{
+
+	/* é um espaçamento interno*/
+	padding: 3em; 
+	
+}
+
+.conteudo-beneficio{
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficio{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens{
+	line-height: 1.5;
+}
+
+/*Conhecido como pseu classes", estou pedindo para o sexto item da lista estar em negrito e os outros 
+estarem normal. Se eu quiser selecionar somente os elemnetos pares eu coloco (2n).*/
+.itens:nth-child(6){ 
+	font-weight: bold;
+}
+
+.imagem-beneficio {
+	width: 40%;
+
+	/*cria efeitos de sombra, posso criar outras sobras com outras cores, basta 
+	eu colocar uma nova cor e se eu quiser outros "px"*/
+	box-shadow: 10px 10px 5px #000000 ; 
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+/*tag para deixar o site responsivo*/
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficio, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+	}
+
+	.lista-beneficio, .imagem-beneficio{
+		width: 100%;
+	}
+}
+
+
+
+
+

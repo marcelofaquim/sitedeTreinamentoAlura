@@ -1,0 +1,76 @@
+body{
+	background-image:url("imagem/5.jpg");
+	width: 100%;
+
+}
+
+.titulo-principal {
+
+	padding-lef: 20px;
+}
+
+#banner{
+
+	width: 100%;
+	margin: 60px 0;
+}
+
+.principal{
+
+	padding: 30px;
+	
+}
+
+h2{
+	text-align: center;
+}
+
+p {
+	text-align: center;
+
+}
+
+img {
+
+	width: 400px;
+	
+}
+
+.img-container {
+
+	text-align: center;
+}
+
+
+.beneficios{
+
+	background:#87CEFA;
+	padding: 20px; /*espaçamento (usar no rodapé)*/
+}
+
+
+.titulo-centralizado{
+	text-align: center;
+}
+
+ul{
+
+	display: inline-block;
+	vertical-align: top; /*para que seja alinhado acima*/
+	width: 20%;
+	margin-right: 15%;
+}
+
+
+.itens{
+	font-style: italic;
+
+}
+
+
+.imagembene{
+
+	width: 50%; /*largura*/
+}
+
+
